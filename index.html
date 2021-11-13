@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+          <li><a class="nav-link" href="#JavaScript_Exceptions">JavaScript_Exceptions</a></li>
+          <li><a class="nav-link" href="#Guides">Guides</a></li>
+          <li><a class="nav-link" href="#JavaScript_Boolean_Reference">JavaScript Boolean Reference</a></li>
+          <li><a class="nav-link" href="#JavaScript_Class_Reference">JavaScript Class Reference</a></li>
+          <li><a class="nav-link" href="#JavaScript_Error_Reference">JavaScript Error Reference</a></li>
+          <li><a class="nav-link" href="#The_HTML_DOM_Document_Object">The HTML DOM Document Object</a></li>
+          <li><a class="nav-link" href="#HTML_DOM_Events">HTML DOM Events</a></li>
+          <li><a class="nav-link" href="#JavaScript_Array">JavaScript Array</a></li>
+          <li><a class="nav-link" href="#JavaScript_JSON_Reference">JavaScript JSON Reference</a></li>
+          </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Getting Started</header>
+          <article>
+            <p>
+              In JavaScript, most things are objects, from core JavaScript features like arrays to the browser 
+              APIs built on top of JavaScript. You can even create your own objects to encapsulate related functions 
+              and variables into efficient packages and act as handy data containers. The object-based nature of JavaScript
+               is important to understand if you want to go further with your knowledge of the language, therefore we've 
+               provided this module to help you. 
+              Here we teach object theory and syntax in detail, then look at how to create your own objects.
+            </p>
+            <p>
+            JavaScript is a text-based programming language used both on the client-side and 
+            server-side that allows you to make web pages interactive. Where HTML and CSS are 
+            languages that give structure and style to web pages, 
+            JavaScript gives web pages interactive elements that engage a user
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Prerequisites">
+          <header>Prerequisites</header>
+          <article>
+            <p>Before starting this module, you should have some familiarity with HTML and CSS. 
+            You are advised to work through the Introduction to HTML and Introduction to CSS modules before 
+            starting on JavaScript.
+
+You should also have some familiarity with JavaScript basics before looking at JavaScript objects in detail.
+ Before attempting this module, work through JavaScript first steps and JavaScript building blocks.</p>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_Exceptions">
+          <header>JavaScript Exceptions</header>
+          <article>
+            <p>
+              JavaScript is a very free-form language. You do not
+              have to declare all variables, classes, and methods. You do not have to
+              be concerned with whether methods are public, private, or protected, and
+              you do not have to implement interfaces. Variables, parameters, and
+              function return types are not explicitly typed.
+              </p>
+          </article>
+        </section>
+          <section class="main-section" id="Guides">
+          <header>Guides</header>
+          <article>
+            <p>When an HTML document is loaded into a web browser, it becomes a document object.
+The document object is the root node of the HTML document.</p>
+            <p>Document Object Properties and Methods
+The following properties and methods can be used on HTML documents:</p>
+            <ul>
+            <li>activeElement	Returns the currently focused element in the document</li>
+<li>addEventListener()	Attaches an event handler to the document</li>
+<li>adoptNode()	Adopts a node from another document</li>
+<li>anchors	Returns a collection of all (a) elements in the document that have a name attribute</li>
+<li>applets	Returns a collection of all applet elements in the document</li>
+<li>baseURI	Returns the absolute base URI of a document</li>
+<li>body	Sets or returns the document's body (the body element)</li>
+<li>close() 	Closes the output stream previously opened with document.open()</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_Boolean_Reference">
+          <header>JavaScript Boolean Reference</header>
+          <article>
+            <p>JavaScript booleans can have one of two values: true or false.
+            The Boolean() Function
+            You can use the Boolean() function to find out if an expression is true:</p>
+            <code>
+              Boolean(10 > 9)
+            </code>
+            Or even easier:
+            <code>
+              (10 > 9) 10 > 9
+            </code>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_Class_Reference">
+          <header>JavaScript Class Reference</header>
+          <p>
+            A class is a type of function, but instead of using the keyword function to initiate it,
+             we use the keyword class, and the properties are assigned inside a constructor() method:
+          </p>
+          <code>
+          class Car {  // Create a class
+  constructor(brand) {  // Class constructor
+    this.carname = brand;  // Class body/properties
+  }
+}
+mycar = new Car("Ford");  // Create an object of Car class
+          </code>
+        </section>
+        <section class="main-section" id="JavaScript_Error_Reference">
+          <header>JavaScript Error Reference</header>
+          <article>
+            You can declare a variable in three ways:
+            <p>
+              The Error object provides error information when an error occurs.
+            </p>
+            <p>
+              In this example we have written "alert" as "adddlert" to deliberately produce an error.
+Return the error name and a description of the error:
+            </p>
+            <code>try {
+  adddlert("Welcome");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML =
+  err.name + "<br>" + err.message;
+}
+</code>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_Error_Reference">
+          <header>JavaScript Error Reference</header>
+          <article>
+            <p>
+              In the HTML DOM, the Attr object represents an HTML attribute.
+An HTML attribute always belongs to an HTML element.
+            </p>
+            <p>
+              In the HTML DOM, the NamedNodeMap object represents an unordered 
+              collection of an elements attribute nodes.
+            Nodes in a NamedNodeMap 
+              can be accessed by name or by index (number).
+            </p>
+          </article>
+        </section>
+
+        <section class="main-section" id="The_HTML_DOM_Document_Object">
+          <header>The HTML DOM Document Object</header>
+          <article>
+            <p>When an HTML document is loaded into a web browser, it becomes a document object.
+                The document object is the root node of the HTML document.</p>
+            <p>Document Object Properties and Methods
+            The following properties and methods can be used on HTML documents:</p>
+            <ul>
+            <li>activeElement	Returns the currently focused element in the document</li>
+<li>addEventListener()	Attaches an event handler to the document</li>
+<li>adoptNode()	Adopts a node from another document</li>
+<li>anchors	Returns a collection of all <a> elements in the document that have a name attribute</li>
+<li>applets	Returns a collection of all (applet) elements in the document</li>
+<li>baseURI	Returns the absolute base URI of a document</li>
+<li>body	Sets or returns the document's body (the <body> element)</li>
+<li>close() 	Closes the output stream previously opened with document.open()</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="HTML_DOM_Events">
+          <header>HTML DOM Events</header>
+          <article>
+            <p>
+              You can create a read-only, named constant with the const keyword. The
+              syntax of a constant identifier is the same as for a variable
+              identifier: it must start with a letter, underscore or dollar sign and
+              can contain alphabetic, numeric, or underscore characters.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript_Array">
+          <header>JavaScript Array</header>
+          <article>
+            <p>JavaScript Array fill() Examples:</p>
+            <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi");
+            </code>
+            <code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi", 2, 4);
+            </code>
+            <p>Definition and Usage
+fill() fills specified elements in an array with a static value.
+fill() overwrites the original array.
+Start and end position can be specified. If not, all elements will be filled.</p>
+            <code>array.fill(value, start, end)</code>
+          </article>
+        </section>
+
+        <section class="main-section" id="JavaScript_JSON_Reference">
+          <header>JavaScript JSON Reference</header>
+          <article>
+            JSON is a format for storing and transporting data.
+JSON is text, and text can be transported anywhere, and read by any programming language.
+JavaScript Objects can be converted into JSON, and JSON can be converted back into JavaScript Objects.
+This way we can work with the data as JavaScript objects, with no complicated parsing or translations.
+      
+            <code>// a JavaScript object...:
+var myObj = { "name":"John", "age":31, "city":"New York" };
+
+// ...converted into JSON:
+var myJSON = JSON.stringify(myObj);
+
+// send JSON:
+window.location = "demo_json.php?x=" + myJSON;</code>
+<ul>
+<li>a string</li>
+<li>a number</li>
+<li>an object (containing valid JSON values)</li>
+<li>an array</li>
+<li>a boolean</li>
+<li>null</li>
+</ul>
+            <p>More Examples</p>
+            <code>// myJSON is text received in JSON format.
+// Convert JSON into a JavaScript object:
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+            </code>
+            <code>
+              // Storing data:
+myObj = { "name":"John", "age":31, "city":"New York" };
+myJSON = JSON.stringify(myObj);
+localStorage.setItem("testJSON", myJSON);
+
+// Retrieving data:
+text = localStorage.getItem("testJSON");
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;</code>
+<p>Referenced from: https://www.w3schools.com/</p>
+          </article>
+        </section>
+      </main>
+</body>
+</html>
